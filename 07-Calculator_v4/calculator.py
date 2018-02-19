@@ -1,8 +1,8 @@
 #Programmer: Eric Evans, M.Ed.
 #Program Name: 4-Function Calculator - V4
 #Description: 4-Function Calculator with Error Checking
-runAgainUpper = "Y"
-while runAgainUpper != "N":
+runAgainUpper = "Y" #Creates a variable named runAgainUpper with a value of Y
+while runAgainUpper != "N": #Starts a while loop that runs as long as the variable named runAgainUpper does not equal N
   print("***************************")
   print("** 4-Function Calculator **")
   print("**                       **")
@@ -11,11 +11,11 @@ while runAgainUpper != "N":
   print("** M - Multiplication    **")
   print("** D - Division          **")
   print("***************************")
-  menu_choice = input("Enter the letter of the function you would like to do and press ENTER:")
+  menu_choice = input("Enter the letter of the function you would like to do and press ENTER:") #Asks the user which menu option they would like
   #Addition Function
-  if menu_choice in['A','a']:
-    while True:
-      try:
+  if menu_choice in['A','a']: #Conditional statement looking is user entered A or a from the menu.
+    while True: #Starts a while loop that runs as long as true
+      try: #
         a1 = float(input("Enter the first number you would like to add and press ENTER:"))
         a2 = float(input("Enter the second number you would like to add and press ENTER:"))
       except ValueError:
